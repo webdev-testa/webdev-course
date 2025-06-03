@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Grid</title>
+  <style>
+    .grid-container { /* in html we first must already have a div that holds other divs that will be the content and this div as the container or the webpage */
+      display: grid; /* this is to set so that we can change the layout for the website */
+      grid-template-columns: 1fr 1fr; /* this is to set total columns for the whole website it will be divided equally thru % of total width */
+      grid-template-rows: 100px 200px 200px; /* this is to set the size of the height for each columns*/
+      gap: 10px; /* this is to set the gaps between cells */
+    }
+
+    .first {
+      grid-column: span 2;
+    }
+
+    .card {
+      background-color: blue;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>CSS Grid</h1>
+  <div class="grid-container">
+    <div class="first card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+  </div>
+
+</body>
+
+</html>
