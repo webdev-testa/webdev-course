@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SOURCE="4. MultiPage Website"
+SOURCE="3. Intermediate HTML"
 DEST="."
 
 # Move all files and folders from SOURCE to DEST
